@@ -114,11 +114,11 @@
         UserInfo *userInfo = [[UserInfo alloc] init];
         userInfo.mobile = self.phoneNumTF.text;
         
-        if ([self.identifier isEqualToString:@"register"]) {
-            self.isSuccess = [ModuleNetManager getCheckNum:userInfo];
-        }else if ([self.identifier isEqualToString:@"resetByPhoneNum"]){
-            self.isSuccess = [ModuleNetManager reGetCheckNum:userInfo];
-        }
+//        if ([self.identifier isEqualToString:@"register"]) {
+//            self.isSuccess = [ModuleNetManager getCheckNum:userInfo];
+//        }else if ([self.identifier isEqualToString:@"resetByPhoneNum"]){
+//            self.isSuccess = [ModuleNetManager reGetCheckNum:userInfo];
+//        }
         
         if (self.isSuccess) {
             self.tipLab.text = @"获取验证码成功";
@@ -177,39 +177,8 @@
         userInfo.userPwd = [CocoaSecurity md5:self.passWordTF.text].hexLower;
         userInfo.secKey = [self.messageKeyTF.text mutableCopy];
         
-        if ([self.identifier isEqualToString:@"resetByPhoneNum"]) {
-            self.isSuccess = [ModuleNetManager modifyPasswordByPhoneNum:userInfo];
-            if (_isSuccess) {
-
-                [[self showMessage:@"密码重置成功！"] contetHeight:screenWidth];
-                [self.navigationController popToRootViewControllerAnimated:YES];
-            }else{
-                self.tipLab.text = userInfo.errorMsg;
-            }
-        }else{
-            self.isSuccess = [ModuleNetManager phoneNumRegister:userInfo];
-            if (_isSuccess) {
-                self.tipLab.text = @"注册成功";
-                [self.view endEditing:YES];
-                [[self showMessage:@"注册成功！"] contetHeight:screenWidth];
-                userInfo.userPwd = [CocoaSecurity md5:self.passWordTF.text].hexLower;
-                userInfo.userName = [self.phoneNumTF.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-                
-                if ([ModuleNetManager userLogIn:userInfo]) {
-                    //登录状态
-                    [[ModuleUserManager getInstance] loginSuccess:userInfo];
-                    self.tipLab.text = @"登录成功";
-                    [[self showMessage:@"登录成功！"] contetHeight:screenWidth];
-                    [noticecenter postNotificationName:@"initVc" object:nil];
-                    
-                } else {
-                    self.tipLab.text = userInfo.errorMsg;
-                }
-                
-            }else{
-                self.tipLab.text = userInfo.errorMsg;
-            }
-        }
+        
+        
     }else{
         if (self.phoneNumTF.text.length == 0) {
             self.tipLab.text = @"手机号不能为空";
@@ -220,16 +189,11 @@
         }
     }
 }
-- (IBAction)mailRegister:(id)sender {
-    
-    [self pushToWebViewControllerWithUrlStr:@"https://m.anybeen.com/sdk_email/email_reg/index.php" Title:@"邮箱注册" andPreVc:self];
-    
-}
+
 - (IBAction)backLogin:(id)sender {
     
     [self.navigationController popViewControllerAnimated:YES];
 }
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];

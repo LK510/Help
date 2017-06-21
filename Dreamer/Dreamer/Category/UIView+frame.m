@@ -205,7 +205,7 @@
     UIView *view = v;
     CGFloat x = .0;
     CGFloat y = .0;
-    while (view && (view.frame.size.width != kScreenWidth || view.frame.size.height != kScreenHeight)) {
+    while (view && (view.frame.size.width != screenWidth || view.frame.size.height != screenHeight)) {
         x += view.frame.origin.x;
         y += view.frame.origin.y;
         view = view.superview;

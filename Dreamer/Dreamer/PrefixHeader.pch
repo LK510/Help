@@ -12,13 +12,27 @@
 
 #import "UIButton+Custom.h"
 #import "UILabel+Custom.h"
-#import "AFNetworking.h"
 #import "UIView+frame.h"
+#import "NSObject+Message.h"
+#import "UITextField+extension.h"
+#import "UIViewController+ShowHud.h"
+
+#import "AFNetworking.h"
+
+#import "UserInfo.h"
+
+#define mainSb [UIStoryboard storyboardWithName:@"Main" bundle:nil]
 
 #define LFwhiteColor [UIColor whiteColor]
 #define LFblackColor [UIColor blackColor]
 #define LFgrayColor [UIColor grayColor]
 #define LFclearColor [UIColor clearColor]
+
+#define SetStatusBarLight \
+[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+
+#define SetStatusBarDefault \
+[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
 
 #define screenWidth [UIScreen mainScreen].bounds.size.width
 #define screenHeight [UIScreen mainScreen].bounds.size.height

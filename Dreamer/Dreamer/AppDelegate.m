@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "LaunchIntroductionView.h"
+#import "LoginRegisterViewController.h"
+#import "YJNavagaViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,12 +23,14 @@
     
 //    [LaunchIntroductionView sharedWithStoryboard:@"Main" images:@[@"launch0.jpg",@"launch1.jpg",@"launch2.jpg",@"launch3"] buttonImage:@"login" buttonFrame:CGRectMake(kScreen_width/2 - 551/4, kScreen_height - 150, 551/2, 45)];
     
+    SetStatusBarLight
+    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-//    LoginViewController *logVc = [[LoginViewController alloc] init];
-//    logVc.logTitle = @"设置";
+    LoginRegisterViewController *logVc = [mainSb instantiateViewControllerWithIdentifier:@"login"];
+    YJNavagaViewController *nav = [[YJNavagaViewController alloc] initWithRootViewController:logVc];
     
-//    self.window.rootViewController = logVc;
+    self.window.rootViewController = nav;
     
     return YES;
 }
