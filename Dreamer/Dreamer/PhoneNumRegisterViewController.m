@@ -114,12 +114,6 @@
         UserInfo *userInfo = [[UserInfo alloc] init];
         userInfo.mobile = self.phoneNumTF.text;
         
-//        if ([self.identifier isEqualToString:@"register"]) {
-//            self.isSuccess = [ModuleNetManager getCheckNum:userInfo];
-//        }else if ([self.identifier isEqualToString:@"resetByPhoneNum"]){
-//            self.isSuccess = [ModuleNetManager reGetCheckNum:userInfo];
-//        }
-        
         if (self.isSuccess) {
             self.tipLab.text = @"获取验证码成功";
             if (self.count < 6) {
@@ -161,9 +155,6 @@
     }
 }
 
--(void)reset{
-    self.registerLabel.text = @"密码重置";
-}
 - (IBAction)clear:(id)sender {
     self.phoneNumTF.text = nil;
 }
@@ -173,11 +164,11 @@
     if (self.phoneNumTF.text.length&&self.passWordTF.text.length&&self.messageKeyTF.text.length) {
         
         UserInfo *userInfo = [[UserInfo alloc] init];
+        userInfo.userName = @"lufei001";
         userInfo.mobile = self.phoneNumTF.text;
         userInfo.userPwd = [CocoaSecurity md5:self.passWordTF.text].hexLower;
-        userInfo.secKey = [self.messageKeyTF.text mutableCopy];
-        
-        
+
+        [ModuleNetManager userLogIn:userInfo];
         
     }else{
         if (self.phoneNumTF.text.length == 0) {

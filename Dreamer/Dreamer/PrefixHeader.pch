@@ -21,6 +21,8 @@
 
 #import "UserInfo.h"
 
+#import "ModuleNetManager.h"
+
 #import "TimeUtils.h"
 #import "SystemUtils.h"
 #import "HttpSecUtil.h"
