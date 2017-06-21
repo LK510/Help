@@ -22,19 +22,14 @@
 		1F61CE911EFA1C2C00078B88 /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F61CE901EFA1C2C00078B88 /* UIView+frame.m */; };
 		1F61CE981EFA229D00078B88 /* PhoneNumRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F61CE951EFA229D00078B88 /* PhoneNumRegisterViewController.m */; };
 		1F61CE9B1EFA22D600078B88 /* LoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F61CE991EFA22D600078B88 /* LoginRegisterViewController.m */; };
-		1F61CEA71EFA23C000078B88 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F61CEA11EFA23C000078B88 /* Base64.m */; };
-		1F61CEA81EFA23C000078B88 /* CocoaSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F61CEA31EFA23C000078B88 /* CocoaSecurity.m */; };
 		1F61CEA91EFA23C000078B88 /* HttpSecUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F61CEA51EFA23C000078B88 /* HttpSecUtil.m */; };
 		1F61CEAD1EFA447B00078B88 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F61CEAC1EFA447B00078B88 /* UserInfo.m */; };
 		1F61CEB01EFA45E600078B88 /* NSObject+Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F61CEAF1EFA45E600078B88 /* NSObject+Message.m */; };
 		1F61CECE1EFA463600078B88 /* FileUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F61CEB81EFA463600078B88 /* FileUtils.m */; };
-		1F61CED11EFA463600078B88 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F61CEBF1EFA463600078B88 /* Reachability.m */; };
-		1F61CED21EFA463600078B88 /* StringUtile.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F61CEC11EFA463600078B88 /* StringUtile.m */; };
 		1F61CED31EFA463600078B88 /* StringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F61CEC31EFA463600078B88 /* StringUtils.m */; };
 		1F61CED41EFA463600078B88 /* SystemUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F61CEC51EFA463600078B88 /* SystemUtils.m */; };
 		1F61CED51EFA463600078B88 /* TimeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F61CEC71EFA463600078B88 /* TimeUtils.m */; };
 		1F61CED61EFA463600078B88 /* UITextField+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F61CEC91EFA463600078B88 /* UITextField+extension.m */; };
-		1F61CED71EFA463600078B88 /* UserIdUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F61CECB1EFA463600078B88 /* UserIdUtils.m */; };
 		1F61CEDC1EFA470900078B88 /* YJHUDMessage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F61CED91EFA470900078B88 /* YJHUDMessage.xib */; };
 		1F61CEDD1EFA470900078B88 /* YJHUDMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F61CEDB1EFA470900078B88 /* YJHUDMessage.m */; };
 		1F61CEE01EFA475000078B88 /* UIView+nib.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F61CEDE1EFA475000078B88 /* UIView+nib.m */; };
@@ -44,6 +39,9 @@
 		1F61CEF01EFA5BFD00078B88 /* ModuleNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F61CEEF1EFA5BFD00078B88 /* ModuleNetManager.m */; };
 		1F61CEF31EFA5DFC00078B88 /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F61CEF11EFA5DFC00078B88 /* HttpRequest.m */; };
 		1F61CEF61EFA5F0600078B88 /* BlockHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F61CEF51EFA5F0600078B88 /* BlockHelper.m */; };
+		1F61CEF91EFA70E600078B88 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F61CEF81EFA70E600078B88 /* Reachability.m */; };
+		1F61CEFE1EFA710300078B88 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F61CEFB1EFA710300078B88 /* Base64.m */; };
+		1F61CEFF1EFA710300078B88 /* CocoaSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F61CEFD1EFA710300078B88 /* CocoaSecurity.m */; };
 		5D4E99D6450FA9466836D98B /* libPods-DreamerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E1D6023D65A5190E69A986 /* libPods-DreamerTests.a */; };
 		7FE97D2EF42884D30E3A504F /* libPods-DreamerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76254A70A1B95408D3939130 /* libPods-DreamerUITests.a */; };
 		8B89BD3C28B1035C3E0BF836 /* libPods-Dreamer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAE7DA07A394CBD7F99AD5 /* libPods-Dreamer.a */; };
@@ -98,10 +96,6 @@
 		1F61CE951EFA229D00078B88 /* PhoneNumRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhoneNumRegisterViewController.m; path = ../PhoneNumRegisterViewController.m; sourceTree = "<group>"; };
 		1F61CE991EFA22D600078B88 /* LoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginRegisterViewController.m; path = ../LoginRegisterViewController.m; sourceTree = "<group>"; };
 		1F61CE9A1EFA22D600078B88 /* LoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginRegisterViewController.h; path = ../LoginRegisterViewController.h; sourceTree = "<group>"; };
-		1F61CEA01EFA23C000078B88 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Base64.h; path = CocoaSecurity/Base64.h; sourceTree = "<group>"; };
-		1F61CEA11EFA23C000078B88 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Base64.m; path = CocoaSecurity/Base64.m; sourceTree = "<group>"; };
-		1F61CEA21EFA23C000078B88 /* CocoaSecurity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CocoaSecurity.h; path = CocoaSecurity/CocoaSecurity.h; sourceTree = "<group>"; };
-		1F61CEA31EFA23C000078B88 /* CocoaSecurity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CocoaSecurity.m; path = CocoaSecurity/CocoaSecurity.m; sourceTree = "<group>"; };
 		1F61CEA41EFA23C000078B88 /* HttpSecUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpSecUtil.h; sourceTree = "<group>"; };
 		1F61CEA51EFA23C000078B88 /* HttpSecUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpSecUtil.m; sourceTree = "<group>"; };
 		1F61CEAB1EFA447B00078B88 /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
@@ -110,10 +104,6 @@
 		1F61CEAF1EFA45E600078B88 /* NSObject+Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Message.m"; sourceTree = "<group>"; };
 		1F61CEB71EFA463600078B88 /* FileUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileUtils.h; sourceTree = "<group>"; };
 		1F61CEB81EFA463600078B88 /* FileUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileUtils.m; sourceTree = "<group>"; };
-		1F61CEBE1EFA463600078B88 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Reachability/Reachability.h; sourceTree = "<group>"; };
-		1F61CEBF1EFA463600078B88 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Reachability/Reachability.m; sourceTree = "<group>"; };
-		1F61CEC01EFA463600078B88 /* StringUtile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringUtile.h; sourceTree = "<group>"; };
-		1F61CEC11EFA463600078B88 /* StringUtile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringUtile.m; sourceTree = "<group>"; };
 		1F61CEC21EFA463600078B88 /* StringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringUtils.h; sourceTree = "<group>"; };
 		1F61CEC31EFA463600078B88 /* StringUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringUtils.m; sourceTree = "<group>"; };
 		1F61CEC41EFA463600078B88 /* SystemUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemUtils.h; sourceTree = "<group>"; };
@@ -122,8 +112,6 @@
 		1F61CEC71EFA463600078B88 /* TimeUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeUtils.m; sourceTree = "<group>"; };
 		1F61CEC81EFA463600078B88 /* UITextField+extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITextField+extension.h"; path = "../utils/UITextField+extension.h"; sourceTree = "<group>"; };
 		1F61CEC91EFA463600078B88 /* UITextField+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITextField+extension.m"; path = "../utils/UITextField+extension.m"; sourceTree = "<group>"; };
-		1F61CECA1EFA463600078B88 /* UserIdUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserIdUtils.h; sourceTree = "<group>"; };
-		1F61CECB1EFA463600078B88 /* UserIdUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserIdUtils.m; sourceTree = "<group>"; };
 		1F61CED91EFA470900078B88 /* YJHUDMessage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YJHUDMessage.xib; sourceTree = "<group>"; };
 		1F61CEDA1EFA470900078B88 /* YJHUDMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJHUDMessage.h; sourceTree = "<group>"; };
 		1F61CEDB1EFA470900078B88 /* YJHUDMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJHUDMessage.m; sourceTree = "<group>"; };
@@ -141,6 +129,12 @@
 		1F61CEF21EFA5DFC00078B88 /* HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
 		1F61CEF41EFA5F0600078B88 /* BlockHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockHelper.h; sourceTree = "<group>"; };
 		1F61CEF51EFA5F0600078B88 /* BlockHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockHelper.m; sourceTree = "<group>"; };
+		1F61CEF71EFA70E600078B88 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		1F61CEF81EFA70E600078B88 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		1F61CEFA1EFA710300078B88 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		1F61CEFB1EFA710300078B88 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+		1F61CEFC1EFA710300078B88 /* CocoaSecurity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaSecurity.h; sourceTree = "<group>"; };
+		1F61CEFD1EFA710300078B88 /* CocoaSecurity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaSecurity.m; sourceTree = "<group>"; };
 		50EAE7DA07A394CBD7F99AD5 /* libPods-Dreamer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Dreamer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E1D6023D65A5190E69A986 /* libPods-DreamerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DreamerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76254A70A1B95408D3939130 /* libPods-DreamerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DreamerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -257,6 +251,8 @@
 			children = (
 				1F61CEE41EFA48D200078B88 /* MBProgressHUD.h */,
 				1F61CEE51EFA48D200078B88 /* MBProgressHUD.m */,
+				1F61CEDF1EFA475000078B88 /* UIView+nib.h */,
+				1F61CEDE1EFA475000078B88 /* UIView+nib.m */,
 				1F61CE8F1EFA1C2C00078B88 /* UIView+frame.h */,
 				1F61CE901EFA1C2C00078B88 /* UIView+frame.m */,
 				1F61CE741EF763BA00078B88 /* UILabel+Custom.h */,
@@ -276,12 +272,12 @@
 		1F61CE9E1EFA23C000078B88 /* security */ = {
 			isa = PBXGroup;
 			children = (
-				1F61CEA01EFA23C000078B88 /* Base64.h */,
-				1F61CEA11EFA23C000078B88 /* Base64.m */,
+				1F61CEFA1EFA710300078B88 /* Base64.h */,
+				1F61CEFB1EFA710300078B88 /* Base64.m */,
+				1F61CEFC1EFA710300078B88 /* CocoaSecurity.h */,
+				1F61CEFD1EFA710300078B88 /* CocoaSecurity.m */,
 				1F61CEA41EFA23C000078B88 /* HttpSecUtil.h */,
 				1F61CEA51EFA23C000078B88 /* HttpSecUtil.m */,
-				1F61CEA21EFA23C000078B88 /* CocoaSecurity.h */,
-				1F61CEA31EFA23C000078B88 /* CocoaSecurity.m */,
 			);
 			path = security;
 			sourceTree = "<group>";
@@ -301,18 +297,14 @@
 			children = (
 				1F61CEB71EFA463600078B88 /* FileUtils.h */,
 				1F61CEB81EFA463600078B88 /* FileUtils.m */,
-				1F61CEBE1EFA463600078B88 /* Reachability.h */,
-				1F61CEBF1EFA463600078B88 /* Reachability.m */,
-				1F61CEC01EFA463600078B88 /* StringUtile.h */,
-				1F61CEC11EFA463600078B88 /* StringUtile.m */,
 				1F61CEC21EFA463600078B88 /* StringUtils.h */,
 				1F61CEC31EFA463600078B88 /* StringUtils.m */,
 				1F61CEC41EFA463600078B88 /* SystemUtils.h */,
 				1F61CEC51EFA463600078B88 /* SystemUtils.m */,
+				1F61CEF71EFA70E600078B88 /* Reachability.h */,
+				1F61CEF81EFA70E600078B88 /* Reachability.m */,
 				1F61CEC61EFA463600078B88 /* TimeUtils.h */,
 				1F61CEC71EFA463600078B88 /* TimeUtils.m */,
-				1F61CECA1EFA463600078B88 /* UserIdUtils.h */,
-				1F61CECB1EFA463600078B88 /* UserIdUtils.m */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -320,8 +312,6 @@
 		1F61CED81EFA46F300078B88 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				1F61CEDF1EFA475000078B88 /* UIView+nib.h */,
-				1F61CEDE1EFA475000078B88 /* UIView+nib.m */,
 				1F61CE6F1EF763BA00078B88 /* NavBarView.h */,
 				1F61CE701EF763BA00078B88 /* NavBarView.m */,
 				1F61CEDA1EFA470900078B88 /* YJHUDMessage.h */,
@@ -685,33 +675,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F61CEFE1EFA710300078B88 /* Base64.m in Sources */,
 				1F0F30EE1ED2C53B003029AD /* ViewController.m in Sources */,
 				1F61CEE01EFA475000078B88 /* UIView+nib.m in Sources */,
 				1F61CE981EFA229D00078B88 /* PhoneNumRegisterViewController.m in Sources */,
 				1F61CEF61EFA5F0600078B88 /* BlockHelper.m in Sources */,
 				1F61CEE31EFA483C00078B88 /* UIViewController+ShowHud.m in Sources */,
-				1F61CEA81EFA23C000078B88 /* CocoaSecurity.m in Sources */,
 				1F0F30EB1ED2C53B003029AD /* AppDelegate.m in Sources */,
 				1F61CECE1EFA463600078B88 /* FileUtils.m in Sources */,
 				1F61CEEC1EFA527800078B88 /* YJNavagaViewController.m in Sources */,
 				1F61CEB01EFA45E600078B88 /* NSObject+Message.m in Sources */,
-				1F61CEA71EFA23C000078B88 /* Base64.m in Sources */,
 				1F61CED51EFA463600078B88 /* TimeUtils.m in Sources */,
 				1F61CE771EF763BA00078B88 /* NavBarView.m in Sources */,
 				1F61CEA91EFA23C000078B88 /* HttpSecUtil.m in Sources */,
 				1F61CEF31EFA5DFC00078B88 /* HttpRequest.m in Sources */,
 				1F61CEE61EFA48D200078B88 /* MBProgressHUD.m in Sources */,
-				1F61CED21EFA463600078B88 /* StringUtile.m in Sources */,
 				1F61CED41EFA463600078B88 /* SystemUtils.m in Sources */,
+				1F61CEFF1EFA710300078B88 /* CocoaSecurity.m in Sources */,
 				1F61CE781EF763BA00078B88 /* UIButton+Custom.m in Sources */,
 				1F61CEDD1EFA470900078B88 /* YJHUDMessage.m in Sources */,
-				1F61CED71EFA463600078B88 /* UserIdUtils.m in Sources */,
-				1F61CED11EFA463600078B88 /* Reachability.m in Sources */,
 				1F61CED31EFA463600078B88 /* StringUtils.m in Sources */,
 				1F61CE9B1EFA22D600078B88 /* LoginRegisterViewController.m in Sources */,
 				1F0F30E81ED2C53B003029AD /* main.m in Sources */,
 				1F0F312B1ED43676003029AD /* LaunchIntroductionView.m in Sources */,
 				1F61CED61EFA463600078B88 /* UITextField+extension.m in Sources */,
+				1F61CEF91EFA70E600078B88 /* Reachability.m in Sources */,
 				1F61CE911EFA1C2C00078B88 /* UIView+frame.m in Sources */,
 				1F61CEAD1EFA447B00078B88 /* UserInfo.m in Sources */,
 				1F61CE791EF763BA00078B88 /* UILabel+Custom.m in Sources */,
@@ -868,6 +856,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2Y8FL748PL;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = Dreamer/PrefixHeader.pch;
 				INFOPLIST_FILE = Dreamer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -883,6 +872,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2Y8FL748PL;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = Dreamer/PrefixHeader.pch;
 				INFOPLIST_FILE = Dreamer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

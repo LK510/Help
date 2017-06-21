@@ -6,9 +6,6 @@
 //  Copyright © 2016年 印记. All rights reserved.
 //
 
-#ifndef ModuleNetManager_h
-#define ModuleNetManager_h
-
 @interface ModuleNetManager : NSObject
  
 //用户帐号登录
@@ -22,4 +19,3 @@
 
 @end
 
-#endif /* ModuleNetManager_h */

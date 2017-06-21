@@ -6,7 +6,6 @@
 //  Copyright © 2016年 印记. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "ModuleNetManager.h"
 
 @implementation ModuleNetManager

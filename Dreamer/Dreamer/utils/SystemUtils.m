@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #import "SystemUtils.h"
-#import "Reachability/Reachability.h"
+#import "Reachability.h"
 #import "sys/utsname.h"
 
 @implementation SystemUtils
