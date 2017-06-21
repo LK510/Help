@@ -1,0 +1,32 @@
+//
+//  PrefixHeader.pch
+//  Dreamer
+//
+//  Created by 路飞 on 2017/5/23.
+//  Copyright © 2017年 路飞. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#import "UIButton+Custom.h"
+#import "UILabel+Custom.h"
+#import "AFNetworking.h"
+#import "UIView+frame.h"
+
+#define LFwhiteColor [UIColor whiteColor]
+#define LFblackColor [UIColor blackColor]
+#define LFgrayColor [UIColor grayColor]
+#define LFclearColor [UIColor clearColor]
+
+#define screenWidth [UIScreen mainScreen].bounds.size.width
+#define screenHeight [UIScreen mainScreen].bounds.size.height
+
+#define COLORRGB(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
+#define UIColorFromRGB(rgbValue) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+#endif /* PrefixHeader_pch */
