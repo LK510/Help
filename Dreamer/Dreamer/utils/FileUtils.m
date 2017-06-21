@@ -158,7 +158,7 @@
 +(NSArray*) getFileListFromPath:(NSString*) filePath{
     
     NSFileManager *fm = [NSFileManager defaultManager];
-    NSArray* directoryContents = [fm directoryContentsAtPath:filePath];
+    NSArray* directoryContents = [fm contentsOfDirectoryAtPath:filePath error:nil];
     
     return directoryContents;
     
@@ -168,7 +168,7 @@
     
     NSMutableArray* resultArray = [[NSMutableArray alloc] init];
     NSFileManager *fm = [NSFileManager defaultManager];
-    NSArray* directoryContents = [fm directoryContentsAtPath:filePath];
+    NSArray* directoryContents = [fm contentsOfDirectoryAtPath:filePath error:nil];
     for (NSString* path in directoryContents) {
         NSString* checkPath = [filePath stringByAppendingPathComponent:path];
         if ([self isDirExist:checkPath]) {

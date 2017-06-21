@@ -28,9 +28,9 @@
     }
     MBProgressHUD *hud = [[MBProgressHUD alloc] initWithView:self.window];
     hud.userInteractionEnabled = NO;
-    hud.labelText = msg;
+    hud.label.text = msg;
     hud.tag = 111110;
-    [hud show:YES];
+    [hud showAnimated:YES];
     
     if (msg!=nil&&![msg isEqualToString:@""]) {
         [self.window addSubview:hud];
@@ -50,9 +50,9 @@
     }
     MBProgressHUD *hud = [[MBProgressHUD alloc] initWithView:self.window];
     hud.userInteractionEnabled = YES;
-    hud.labelText = msg;
+    hud.label.text = msg;
     hud.tag = 111110;
-    [hud show:YES];
+    [hud showAnimated:YES];
     [self.window addSubview:hud];
 }
 
@@ -61,7 +61,7 @@
     for (UIView *v in self.window.subviews) {
         if (v.tag == 111110) {
             MBProgressHUD *hud = (MBProgressHUD *)v;
-            [hud hide:YES];
+            [hud hideAnimated:YES];
             [hud removeFromSuperview];
         }
     }
@@ -73,12 +73,12 @@
     
     // Configure for text only and offset down
     hud.mode = MBProgressHUDModeText;
-    hud.labelText = text;
+    hud.label.text = text;
     hud.margin = 15.f;
-    hud.yOffset = -50.f;
+    [hud setOffset:CGPointMake(0, -50.f)];
     hud.removeFromSuperViewOnHide = YES;
     
-    [hud hide:YES afterDelay:2];
+    [hud hideAnimated:YES afterDelay:2];
 }
 
 - (void)showTextOnly:(NSString *)text andDelay:(float)delay
@@ -87,12 +87,12 @@
     
     // Configure for text only and offset down
     hud.mode = MBProgressHUDModeText;
-    hud.labelText = text;
+    hud.label.text = text;
     hud.margin = 15.f;
-    hud.yOffset = -50.f;
+    [hud setOffset:CGPointMake(0, -50.f)];
     hud.removeFromSuperViewOnHide = YES;
     
-    [hud hide:YES afterDelay:delay];
+    [hud hideAnimated:YES afterDelay:delay];
 }
 
 - (void)showWithLabelMixed
@@ -100,8 +100,8 @@
     MBProgressHUD *HUD = [[MBProgressHUD alloc] initWithView:self.window];
     HUD.tag = 111110;
     [self.window addSubview:HUD];
-    HUD.labelText = @"连接中";
-    [HUD show:YES];
+    HUD.label.text = @"连接中";
+    [HUD showAnimated:YES];
 }
 
 - (void)myMixedTask:(NSProgress *)uploadProgress
@@ -118,13 +118,13 @@
     float progress = uploadProgress.fractionCompleted;
     if (progress < 1.0f) {
         HUD.mode = MBProgressHUDModeDeterminate;
-        HUD.labelText = [NSString stringWithFormat:@"%d%%",(int)progress*100];
+        HUD.label.text = [NSString stringWithFormat:@"%d%%",(int)progress*100];
         HUD.progress = progress;
     }
     else {
         // Back to indeterminate mode
         HUD.mode = MBProgressHUDModeIndeterminate;
-        HUD.labelText = @"服务器处理中";
+        HUD.label.text = @"服务器处理中";
     }
 }
 
