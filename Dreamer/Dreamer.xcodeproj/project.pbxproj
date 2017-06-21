@@ -41,6 +41,9 @@
 		1F61CEE31EFA483C00078B88 /* UIViewController+ShowHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F61CEE21EFA483C00078B88 /* UIViewController+ShowHud.m */; };
 		1F61CEE61EFA48D200078B88 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F61CEE51EFA48D200078B88 /* MBProgressHUD.m */; };
 		1F61CEEC1EFA527800078B88 /* YJNavagaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F61CEEB1EFA527800078B88 /* YJNavagaViewController.m */; };
+		1F61CEF01EFA5BFD00078B88 /* ModuleNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F61CEEF1EFA5BFD00078B88 /* ModuleNetManager.m */; };
+		1F61CEF31EFA5DFC00078B88 /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F61CEF11EFA5DFC00078B88 /* HttpRequest.m */; };
+		1F61CEF61EFA5F0600078B88 /* BlockHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F61CEF51EFA5F0600078B88 /* BlockHelper.m */; };
 		5D4E99D6450FA9466836D98B /* libPods-DreamerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E1D6023D65A5190E69A986 /* libPods-DreamerTests.a */; };
 		7FE97D2EF42884D30E3A504F /* libPods-DreamerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76254A70A1B95408D3939130 /* libPods-DreamerUITests.a */; };
 		8B89BD3C28B1035C3E0BF836 /* libPods-Dreamer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAE7DA07A394CBD7F99AD5 /* libPods-Dreamer.a */; };
@@ -132,6 +135,12 @@
 		1F61CEE51EFA48D200078B88 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		1F61CEEA1EFA527800078B88 /* YJNavagaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJNavagaViewController.h; sourceTree = "<group>"; };
 		1F61CEEB1EFA527800078B88 /* YJNavagaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJNavagaViewController.m; sourceTree = "<group>"; };
+		1F61CEEE1EFA5BFD00078B88 /* ModuleNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleNetManager.h; sourceTree = "<group>"; };
+		1F61CEEF1EFA5BFD00078B88 /* ModuleNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleNetManager.m; sourceTree = "<group>"; };
+		1F61CEF11EFA5DFC00078B88 /* HttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequest.m; sourceTree = "<group>"; };
+		1F61CEF21EFA5DFC00078B88 /* HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
+		1F61CEF41EFA5F0600078B88 /* BlockHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockHelper.h; sourceTree = "<group>"; };
+		1F61CEF51EFA5F0600078B88 /* BlockHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockHelper.m; sourceTree = "<group>"; };
 		50EAE7DA07A394CBD7F99AD5 /* libPods-Dreamer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Dreamer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E1D6023D65A5190E69A986 /* libPods-DreamerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DreamerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76254A70A1B95408D3939130 /* libPods-DreamerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DreamerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -196,6 +205,7 @@
 		1F0F30E51ED2C53B003029AD /* Dreamer */ = {
 			isa = PBXGroup;
 			children = (
+				1F61CEED1EFA5BF200078B88 /* Module */,
 				1F61CEE91EFA526C00078B88 /* Base */,
 				1F61CEE81EFA4FFA00078B88 /* Test */,
 				1F61CEB11EFA463600078B88 /* utils */,
@@ -268,10 +278,10 @@
 			children = (
 				1F61CEA01EFA23C000078B88 /* Base64.h */,
 				1F61CEA11EFA23C000078B88 /* Base64.m */,
-				1F61CEA21EFA23C000078B88 /* CocoaSecurity.h */,
-				1F61CEA31EFA23C000078B88 /* CocoaSecurity.m */,
 				1F61CEA41EFA23C000078B88 /* HttpSecUtil.h */,
 				1F61CEA51EFA23C000078B88 /* HttpSecUtil.m */,
+				1F61CEA21EFA23C000078B88 /* CocoaSecurity.h */,
+				1F61CEA31EFA23C000078B88 /* CocoaSecurity.m */,
 			);
 			path = security;
 			sourceTree = "<group>";
@@ -310,13 +320,13 @@
 		1F61CED81EFA46F300078B88 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				1F61CE6F1EF763BA00078B88 /* NavBarView.h */,
-				1F61CE701EF763BA00078B88 /* NavBarView.m */,
 				1F61CEDF1EFA475000078B88 /* UIView+nib.h */,
 				1F61CEDE1EFA475000078B88 /* UIView+nib.m */,
-				1F61CED91EFA470900078B88 /* YJHUDMessage.xib */,
+				1F61CE6F1EF763BA00078B88 /* NavBarView.h */,
+				1F61CE701EF763BA00078B88 /* NavBarView.m */,
 				1F61CEDA1EFA470900078B88 /* YJHUDMessage.h */,
 				1F61CEDB1EFA470900078B88 /* YJHUDMessage.m */,
+				1F61CED91EFA470900078B88 /* YJHUDMessage.xib */,
 			);
 			name = Tools;
 			path = Category;
@@ -353,6 +363,19 @@
 				1F61CEEB1EFA527800078B88 /* YJNavagaViewController.m */,
 			);
 			name = Base;
+			sourceTree = "<group>";
+		};
+		1F61CEED1EFA5BF200078B88 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				1F61CEF41EFA5F0600078B88 /* BlockHelper.h */,
+				1F61CEF51EFA5F0600078B88 /* BlockHelper.m */,
+				1F61CEF21EFA5DFC00078B88 /* HttpRequest.h */,
+				1F61CEF11EFA5DFC00078B88 /* HttpRequest.m */,
+				1F61CEEE1EFA5BFD00078B88 /* ModuleNetManager.h */,
+				1F61CEEF1EFA5BFD00078B88 /* ModuleNetManager.m */,
+			);
+			name = Module;
 			sourceTree = "<group>";
 		};
 		51E6E1FCDE82A3E92CDD73AE /* Frameworks */ = {
@@ -665,6 +688,7 @@
 				1F0F30EE1ED2C53B003029AD /* ViewController.m in Sources */,
 				1F61CEE01EFA475000078B88 /* UIView+nib.m in Sources */,
 				1F61CE981EFA229D00078B88 /* PhoneNumRegisterViewController.m in Sources */,
+				1F61CEF61EFA5F0600078B88 /* BlockHelper.m in Sources */,
 				1F61CEE31EFA483C00078B88 /* UIViewController+ShowHud.m in Sources */,
 				1F61CEA81EFA23C000078B88 /* CocoaSecurity.m in Sources */,
 				1F0F30EB1ED2C53B003029AD /* AppDelegate.m in Sources */,
@@ -675,6 +699,7 @@
 				1F61CED51EFA463600078B88 /* TimeUtils.m in Sources */,
 				1F61CE771EF763BA00078B88 /* NavBarView.m in Sources */,
 				1F61CEA91EFA23C000078B88 /* HttpSecUtil.m in Sources */,
+				1F61CEF31EFA5DFC00078B88 /* HttpRequest.m in Sources */,
 				1F61CEE61EFA48D200078B88 /* MBProgressHUD.m in Sources */,
 				1F61CED21EFA463600078B88 /* StringUtile.m in Sources */,
 				1F61CED41EFA463600078B88 /* SystemUtils.m in Sources */,
@@ -690,6 +715,7 @@
 				1F61CE911EFA1C2C00078B88 /* UIView+frame.m in Sources */,
 				1F61CEAD1EFA447B00078B88 /* UserInfo.m in Sources */,
 				1F61CE791EF763BA00078B88 /* UILabel+Custom.m in Sources */,
+				1F61CEF01EFA5BFD00078B88 /* ModuleNetManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

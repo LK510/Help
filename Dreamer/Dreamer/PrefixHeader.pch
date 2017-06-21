@@ -21,6 +21,15 @@
 
 #import "UserInfo.h"
 
+#import "TimeUtils.h"
+#import "SystemUtils.h"
+#import "HttpSecUtil.h"
+#import "HttpRequest.h"
+#import "BlockHelper.h"
+
+
+NSString * const HELP_SERVER_API_URL = @"http://123.57.39.181/fyq/answer/web/index.php?r=site/index";
+
 #define mainSb [UIStoryboard storyboardWithName:@"Main" bundle:nil]
 
 #define LFwhiteColor [UIColor whiteColor]
