@@ -164,13 +164,14 @@
     if (self.phoneNumTF.text.length&&self.passWordTF.text.length&&self.messageKeyTF.text.length) {
         
         UserInfo *userInfo = [[UserInfo alloc] init];
-        userInfo.userName = @"lufei001";
-        userInfo.mobile = self.phoneNumTF.text;
+        userInfo.userName = self.phoneNumTF.text;
+        userInfo.mobile = @"0";
         userInfo.userPwd = [CocoaSecurity md5:self.passWordTF.text].hexLower;
 
-        [ModuleNetManager userLogIn:userInfo];
+        [ModuleNetManager userRegister:userInfo];
         
     }else{
+        
         if (self.phoneNumTF.text.length == 0) {
             self.tipLab.text = @"手机号不能为空";
         }else if (self.passWordTF.text.length == 0){

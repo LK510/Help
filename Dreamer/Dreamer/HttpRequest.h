@@ -17,5 +17,6 @@
  
 -(NSData*) sendDataByHttpPost:(NSString*) url : (NSData*) param;
 
+- (void) sendHttpPost:(NSString*) url : (NSMutableDictionary*) param : (NSMutableDictionary*)respond;
 
 @end

@@ -7,11 +7,51 @@
 //
 
 #import <Foundation/Foundation.h>
-
-
 #import "HttpRequest.h"
 
+@interface HttpRequest ()
+
+@property (nonatomic,strong) AFHTTPSessionManager *manager;
+
+@end
+
 @implementation HttpRequest
+
+- (AFHTTPSessionManager *) manager{
+    
+    if (_manager == nil) {
+        
+        _manager = [AFHTTPSessionManager manager];
+        _manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+        _manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",
+                                                                  @"text/html",
+                                                                  @"image/jpeg",
+                                                                  @"image/png",
+                                                                  @"application/octet-stream",
+                                                                  @"text/json",
+                                                                  nil];
+
+    }
+    return _manager;
+}
+
+- (void) sendHttpPost:(NSString*) url : (NSMutableDictionary*) param : (NSMutableDictionary*)respond{
+    
+    [self.manager POST:url parameters:param progress:^(NSProgress * _Nonnull uploadProgress) {
+        
+        //...
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        [respond setValue:responseObject forKey:@"respond"];
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+        [respond setValue:error forKey:@"error"];
+        
+    }];
+    
+}
 
 -(NSData*) sendDataByHttpPost:(NSString*) urlstr : (NSData*) param{
     

@@ -74,6 +74,7 @@
 
 			[userInfo readLoginDiction:dataDic];
 			return true;
+            
 		}else{
 			userInfo.errorMsg = [resDic valueForKey:@"msg"];
 		}
@@ -88,29 +89,34 @@
 	}
 
 	NSMutableDictionary* paramMap = [[NSMutableDictionary alloc] init];
-	[paramMap setValue:userInfo.userName forKey:@"username"];
-	[paramMap setValue:userInfo.userPwd forKey:@"password"];
+	[paramMap setValue:userInfo.userName forKey:@"userName"];
+	[paramMap setValue:userInfo.userPwd forKey:@"UserPwd"];
 	[paramMap setValue:@"register" forKey:@"action"];
 
-	NSData* secData = [HttpSecUtil getEncryptHttpParam:paramMap];
-
-	HttpRequest* httpRequest = [[HttpRequest alloc] init];
-	NSData* response = [httpRequest sendDataByHttpPost :HELP_SERVER_API_URL:secData];
-
-	if (response != nil) {
-		NSError* error;
-		NSDictionary* resDic = [NSJSONSerialization JSONObjectWithData:response options:NSJSONReadingMutableLeaves error:&error];
-		NSDictionary* dataDic = [resDic valueForKey:@"data"];
-		if (dataDic != nil && [dataDic isKindOfClass:[NSDictionary class]]) {
-
-			[userInfo readRegisterDiction:dataDic];
-
-		}else{
-			userInfo.errorMsg = [resDic valueForKey:@"msg"];
-			return false;
-		}
-
-	}
+    NSMutableDictionary *respond = [NSMutableDictionary new];
+    HttpRequest* httpRequest = [[HttpRequest alloc] init];
+    [httpRequest sendHttpPost:HELP_SERVER_API_URL :paramMap :respond];
+    
+    
+    
+//	NSData* secData = [HttpSecUtil getEncryptHttpParam:paramMap];
+//	HttpRequest* httpRequest = [[HttpRequest alloc] init];
+//	NSData* response = [httpRequest sendDataByHttpPost :HELP_SERVER_API_URL:secData];
+//
+//	if (response != nil) {
+//		NSError* error;
+//		NSDictionary* resDic = [NSJSONSerialization JSONObjectWithData:response options:NSJSONReadingMutableLeaves error:&error];
+//		NSDictionary* dataDic = [resDic valueForKey:@"data"];
+//		if (dataDic != nil && [dataDic isKindOfClass:[NSDictionary class]]) {
+//
+//			[userInfo readRegisterDiction:dataDic];
+//
+//		}else{
+//			userInfo.errorMsg = [resDic valueForKey:@"msg"];
+//			return false;
+//		}
+//
+//	}
 
 	return true;
 }

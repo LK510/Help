@@ -42,6 +42,11 @@
 		1F61CEF91EFA70E600078B88 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F61CEF81EFA70E600078B88 /* Reachability.m */; };
 		1F61CEFE1EFA710300078B88 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F61CEFB1EFA710300078B88 /* Base64.m */; };
 		1F61CEFF1EFA710300078B88 /* CocoaSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F61CEFD1EFA710300078B88 /* CocoaSecurity.m */; };
+		1F61CF0B1EFA743C00078B88 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F61CF0A1EFA743C00078B88 /* libAFNetworking.a */; };
+		1F61CF0D1EFA745600078B88 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F61CF0C1EFA745600078B88 /* UIKit.framework */; };
+		1F61CF0F1EFA747B00078B88 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F61CF0E1EFA747B00078B88 /* libc++.tbd */; };
+		1F61CF111EFA749800078B88 /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F61CF101EFA749800078B88 /* libc++.1.tbd */; };
+		1F61CF131EFA74AC00078B88 /* libc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F61CF121EFA74AC00078B88 /* libc.tbd */; };
 		5D4E99D6450FA9466836D98B /* libPods-DreamerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E1D6023D65A5190E69A986 /* libPods-DreamerTests.a */; };
 		7FE97D2EF42884D30E3A504F /* libPods-DreamerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76254A70A1B95408D3939130 /* libPods-DreamerUITests.a */; };
 		8B89BD3C28B1035C3E0BF836 /* libPods-Dreamer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EAE7DA07A394CBD7F99AD5 /* libPods-Dreamer.a */; };
@@ -135,6 +140,11 @@
 		1F61CEFB1EFA710300078B88 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
 		1F61CEFC1EFA710300078B88 /* CocoaSecurity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaSecurity.h; sourceTree = "<group>"; };
 		1F61CEFD1EFA710300078B88 /* CocoaSecurity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaSecurity.m; sourceTree = "<group>"; };
+		1F61CF0A1EFA743C00078B88 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "../../../Library/Developer/Xcode/DerivedData/Dreamer-awjhviejnpfabfaypjpspisbrlpt/Build/Products/Debug-iphonesimulator/AFNetworking/libAFNetworking.a"; sourceTree = "<group>"; };
+		1F61CF0C1EFA745600078B88 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1F61CF0E1EFA747B00078B88 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		1F61CF101EFA749800078B88 /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
+		1F61CF121EFA74AC00078B88 /* libc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libc.tbd; path = usr/lib/libc.tbd; sourceTree = SDKROOT; };
 		50EAE7DA07A394CBD7F99AD5 /* libPods-Dreamer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Dreamer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E1D6023D65A5190E69A986 /* libPods-DreamerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DreamerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76254A70A1B95408D3939130 /* libPods-DreamerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DreamerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +161,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F61CF131EFA74AC00078B88 /* libc.tbd in Frameworks */,
+				1F61CF111EFA749800078B88 /* libc++.1.tbd in Frameworks */,
+				1F61CF0F1EFA747B00078B88 /* libc++.tbd in Frameworks */,
+				1F61CF0D1EFA745600078B88 /* UIKit.framework in Frameworks */,
+				1F61CF0B1EFA743C00078B88 /* libAFNetworking.a in Frameworks */,
 				8B89BD3C28B1035C3E0BF836 /* libPods-Dreamer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,6 +386,11 @@
 		51E6E1FCDE82A3E92CDD73AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1F61CF121EFA74AC00078B88 /* libc.tbd */,
+				1F61CF101EFA749800078B88 /* libc++.1.tbd */,
+				1F61CF0E1EFA747B00078B88 /* libc++.tbd */,
+				1F61CF0C1EFA745600078B88 /* UIKit.framework */,
+				1F61CF0A1EFA743C00078B88 /* libAFNetworking.a */,
 				50EAE7DA07A394CBD7F99AD5 /* libPods-Dreamer.a */,
 				69E1D6023D65A5190E69A986 /* libPods-DreamerTests.a */,
 				76254A70A1B95408D3939130 /* libPods-DreamerUITests.a */,

@@ -45,7 +45,6 @@
     self.manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     self.urlStr = @"http://lufei/postRequest.php";
     
-//    NSURLSessionDataTask *task =
     
     [self.manager POST:self.urlStr parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData> _Nonnull formData) {
         
